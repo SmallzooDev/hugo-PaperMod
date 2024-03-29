@@ -58,13 +58,6 @@
                             -
                             {{ .Title }}
                         </div>
-                        <ul class="tag-list">
-                            {{ range .Params.tags }}
-                                <li class="post-tag">
-                                    <a href="{{ "/tags/" | relLangURL }}#{{ . }}" >#{{ . }}</a>
-                                </li>
-                            {{ end }}
-                        </ul>
                     </a>
                 </div>
             </li>
