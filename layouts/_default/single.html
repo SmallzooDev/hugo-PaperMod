@@ -42,6 +42,37 @@
   </div>
   {{- end }}
 
+  <br>
+  <br>
+  <div>
+    <p> --- </p>
+    <H3>최근 변경된 문서</H3>
+    <ul class="post-list">
+        {{ $pages := where .Site.Pages "Section" "_wiki" }}
+        {{ range $pages }}
+            <li>
+                <div>
+                    <a class="post-link" href="{{ .Permalink }}">
+                        <div class="post-meta">
+                            {{ .Date.Format "2006.01.02" }}
+                            -
+                            {{ .Title }}
+                        </div>
+                        <ul class="tag-list">
+                            {{ range .Params.tags }}
+                                <li class="post-tag">
+                                    <a href="{{ "/tags/" | relLangURL }}#{{ . }}" >#{{ . }}</a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    </a>
+                </div>
+            </li>
+        {{ end }}
+    </ul>
+    <p> --- </p>
+</div>
+
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
