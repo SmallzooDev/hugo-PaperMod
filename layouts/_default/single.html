@@ -44,9 +44,7 @@
   <br />
   <br />
   <div>
-    <h3>최근 변경된 문서</h3>
-    <br />
-    <hr />
+    <h2>최근 변경된 문서</h2>
     <ul class="post-list">
       {{ $pages := where .Site.Pages "Section" "_wiki" }} {{ range $pages }}
       <li>
@@ -60,7 +58,6 @@
       </li>
       {{ end }}
     </ul>
-    <hr />
   </div>
 
   <footer class="post-footer">
