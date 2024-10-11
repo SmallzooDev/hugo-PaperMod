@@ -214,6 +214,7 @@
 }
 
 .post-content blockquote {
+  font-family: "Dongle", "Noto Sans KR";
   margin: 20px 0;
   padding: 0 14px;
   border-inline-start: 3px solid var(--primary);
@@ -269,9 +270,9 @@
 }
 
 .toc details summary {
-    cursor: zoom-in;
-    margin-inline-start: 10px;
-    user-select: none;
+  cursor: zoom-in;
+  margin-inline-start: 10px;
+  user-select: none;
 }
 
 .toc details[open] summary {
@@ -284,17 +285,9 @@
 }
 
 .toc .inner {
-<<<<<<< HEAD
-    margin: 5px 20px 0;
-    padding: 0 10px;
-    opacity: 0.9;
-||||||| 63034c4
-    margin: 0 20px;
-    padding: 10px 20px;
-=======
-  margin: 0 20px;
-  padding: 10px 20px;
->>>>>>> fix-background
+  margin: 5px 20px 0;
+  padding: 0 10px;
+  opacity: 0.9;
 }
 
 .toc li ul {
