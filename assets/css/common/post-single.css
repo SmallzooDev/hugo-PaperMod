@@ -47,13 +47,11 @@
 .post-content h1 {
   margin: 40px auto 32px;
   font-size: 40px;
-  color: #81a1c1;
 }
 
 .post-content h2 {
   margin: 32px auto 24px;
   font-size: 32px;
-  color: #81a1c1;
 }
 
 .post-content h3 {
@@ -205,7 +203,7 @@
   margin: auto 0;
   padding: 10px;
   color: rgb(213, 213, 214); /* 기존 글씨 색상 유지 */
-  background: #2e3440 !important; /* 기존보다 어두운 Nord 테마 톤 */
+  background: #4c566a !important; /* 배경을 밝게 조정 (Nord 중간톤) */
   border-radius: var(--radius);
   overflow-x: auto;
   word-break: break-all;
@@ -216,7 +214,7 @@
   padding: 4px 6px;
   font-size: 0.78em;
   line-height: 1.5;
-  background: #3b4252; /* 기존보다 살짝 어두운 톤 */
+  background: #4c566a; /* 인라인 코드 배경도 더 밝게 */
   color: #88c0d0;
   border-radius: 2px;
 }
