@@ -47,11 +47,13 @@
 .post-content h1 {
   margin: 40px auto 32px;
   font-size: 40px;
+  color: #81a1c1;
 }
 
 .post-content h2 {
   margin: 32px auto 24px;
   font-size: 32px;
+  color: #81a1c1;
 }
 
 .post-content h3 {
@@ -198,33 +200,35 @@
   margin-bottom: 0;
 }
 
+.post-content pre code {
+  display: grid;
+  margin: auto 0;
+  padding: 10px;
+  color: rgb(213, 213, 214); /* 기존 글씨 색상 유지 */
+  background: #2e3440 !important; /* 기존보다 어두운 Nord 테마 톤 */
+  border-radius: var(--radius);
+  overflow-x: auto;
+  word-break: break-all;
+}
+
 .post-content code {
   margin: auto 4px;
   padding: 4px 6px;
   font-size: 0.78em;
   line-height: 1.5;
-  background: #4c566a;
+  background: #3b4252; /* 기존보다 살짝 어두운 톤 */
   color: #88c0d0;
   border-radius: 2px;
-}
-
-.post-content pre code {
-  display: grid;
-  margin: auto 0;
-  padding: 10px;
-  color: rgb(213, 213, 214);
-  background: #4c566a !important;
-  border-radius: var(--radius);
-  overflow-x: auto;
-  word-break: break-all;
 }
 
 .post-content blockquote {
   font-family: "Dongle", "Noto Sans KR";
   margin: 20px 0;
   padding: 0 14px;
-  border-inline-start: 3px solid var(--primary);
-  font-size: 1.5em;
+  border-inline-start: 3px solid #81a1c1; /* 인용 블록의 테두리에 하늘색 적용 */
+  font-size: 1.65em;
+  color: var(--content); /* 기본 텍스트 색상 유지 */
+  background-color: rgba(129, 161, 193, 0.1); /* 배경에 아주 옅은 하늘색 적용 */
 }
 
 .post-content hr {

@@ -5,50 +5,47 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 */
 
 .ubuntu-mono-regular {
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .ubuntu-mono-bold {
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .ubuntu-mono-regular-italic {
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: 400;
-    font-style: italic;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .ubuntu-mono-bold-italic {
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: 700;
-    font-style: italic;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
 }
-  
 
 .noto-sans kr-sans {
-    font-family: "Noto Sans KR", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: regular;
-    font-style: normal;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
 }
-
 
 .josefin-sans-for-eng {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: regular;
-    font-style: normal;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
 }
 
-
-
-.post-content pre, code {
-    font-family: 'Ubuntu Mono', monospace;
-    max-height: 40rem;
+.post-content pre,
+code {
+  font-family: "Ubuntu Mono", monospace;
+  max-height: 40rem;
 }
 
 :root {
@@ -101,6 +98,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 .active {
   font-size: 110%;
   font-weight: 600;
+  color: var(--secondary);
 }
 
 .toc ul {
@@ -128,10 +126,10 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
   color: var(--secondary);
 }
 
-
 body {
-    font-family: 'Josefin Sans', 'Noto Sans KR', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
+  font-family: "Josefin Sans", "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
 }
+
