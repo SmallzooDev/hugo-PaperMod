@@ -33,6 +33,7 @@
 }
 
 .post-content {
+  font-size: 0.9em;
   color: var(--content);
 }
 
@@ -69,11 +70,16 @@
   font-size: 12px;
 }
 
-.post-content a,
-.toc a:hover {
-  box-shadow: 0 1px 0;
+.post-content a {
+  color: #a3be8c;
+  box-shadow: 0 1px 0 #a3be8c;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
+}
+
+.post-content a:hover {
+  color: #a3be8c;
+  box-shadow: 0 1px 0 #a3be8c;
 }
 
 .post-content a code {
@@ -218,6 +224,7 @@
   margin: 20px 0;
   padding: 0 14px;
   border-inline-start: 3px solid var(--primary);
+  font-size: 1.2em;
 }
 
 .post-content hr {
