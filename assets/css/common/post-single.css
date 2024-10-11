@@ -33,7 +33,7 @@
 }
 
 .post-content {
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: var(--content);
 }
 
@@ -71,15 +71,15 @@
 }
 
 .post-content a {
-  color: #a3be8c;
-  box-shadow: 0 1px 0 #a3be8c;
+  color: #81a1c1;
+  box-shadow: 0 1px 0 #81a1c1;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
 
 .post-content a:hover {
-  color: #a3be8c;
-  box-shadow: 0 1px 0 #a3be8c;
+  color: #81a1c1;
+  box-shadow: 0 1px 0 #81a1c1;
 }
 
 .post-content a code {
@@ -224,7 +224,7 @@
   margin: 20px 0;
   padding: 0 14px;
   border-inline-start: 3px solid var(--primary);
-  font-size: 1.2em;
+  font-size: 1.35em;
 }
 
 .post-content hr {
