@@ -202,8 +202,8 @@
   display: grid;
   margin: auto 0;
   padding: 10px;
-  color: rgb(213, 213, 214); /* 기존 글씨 색상 유지 */
-  background: #4c566a !important; /* 배경을 밝게 조정 (Nord 중간톤) */
+  color: rgb(213, 213, 214);
+  background: rgba(129, 161, 193, 0.1) !important;
   border-radius: var(--radius);
   overflow-x: auto;
   word-break: break-all;
@@ -214,7 +214,7 @@
   padding: 4px 6px;
   font-size: 0.78em;
   line-height: 1.5;
-  background: #4c566a; /* 인라인 코드 배경도 더 밝게 */
+  background: rgba(129, 161, 193, 0.1);
   color: #88c0d0;
   border-radius: 2px;
 }
@@ -223,10 +223,10 @@
   font-family: "Dongle", "Noto Sans KR";
   margin: 20px 0;
   padding: 0 14px;
-  border-inline-start: 3px solid #81a1c1; /* 인용 블록의 테두리에 하늘색 적용 */
+  border-inline-start: 3px solid #81a1c1;
   font-size: 1.65em;
-  color: var(--content); /* 기본 텍스트 색상 유지 */
-  background-color: rgba(129, 161, 193, 0.1); /* 배경에 아주 옅은 하늘색 적용 */
+  color: var(--content);
+  background-color: rgba(129, 161, 193, 0.1);
 }
 
 .post-content hr {
