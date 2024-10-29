@@ -38,16 +38,14 @@
     "anchored_headings.html" .Content -}} {{- else }}{{ .Content }}{{ end }}
   </div>
   {{- end }}
-
-  <br />
-  <br />
   <br />
   <br />
   <div>
-    <h2>최근 변경된 문서</h2>
+    <h2>Recent Changes 🥸</h2>
     <br />
-    <ul class="post-list">
-      {{ $pages := where .Site.Pages "Section" "_wiki" }} {{ range $pages }}
+    <ul id="recent-changes-list">
+      {{ $pages := where .Site.Pages "Section" "_wiki" }} {{ $latestPages :=
+      first 20 (sort $pages "Date" "desc") }} {{ range $latestPages }}
       <li>
         <div>
           <a class="post-link" href="{{ .Permalink }}">
