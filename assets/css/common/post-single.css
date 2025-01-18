@@ -45,21 +45,26 @@
 }
 
 .post-content h1 {
-  margin: 40px auto 32px;
-  font-size: 40px;
+  font-size: 2.4em;
+  margin-top: 3em;
+  color: #CDD6F4;
 }
 
 .post-content h2 {
-  margin: 32px auto 24px;
-  font-size: 32px;
+  font-size: 1.8em;
+  margin-top: 2.5em;
+  color: #B4BEFE;
 }
 
 .post-content h3 {
-  font-size: 24px;
+  font-size: 1.4em;
+  margin-top: 2em;
+  color: #F9E2AF;
 }
 
 .post-content h4 {
-  font-size: 16px;
+  font-size: 1.2em;
+  color: #F9E2AF;
 }
 
 .post-content h5 {
@@ -71,15 +76,15 @@
 }
 
 .post-content a {
-  color: #81a1c1;
-  box-shadow: 0 1px 0 #81a1c1;
+  color: #A6E3A1;
+  box-shadow: 0 1px 0 #A6E3A1;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
 
 .post-content a:hover {
-  color: #81a1c1;
-  box-shadow: 0 1px 0 #81a1c1;
+  color: #A6E3A1;
+  box-shadow: 0 1px 0 #A6E3A1;
 }
 
 .post-content a code {
@@ -163,7 +168,7 @@
 
 .post-content .highlight:not(table) {
   margin: 10px auto;
-  background: var(--code-block-bg) !important;
+  background: #1e1e2e !important;
   border-radius: var(--radius);
   direction: ltr;
 }
@@ -177,7 +182,7 @@
 }
 
 .post-content .highlight pre {
-  background-color: var(--theme) !important;
+  background-color: #313244 !important;
   margin: 0;
 }
 
@@ -202,8 +207,8 @@
   display: grid;
   margin: auto 0;
   padding: 10px;
-  color: rgb(213, 213, 214);
-  background: rgba(129, 161, 193, 0.1) !important;
+  color: #CDD6F4;
+  background: #313244 !important;
   border-radius: var(--radius);
   overflow-x: auto;
   word-break: break-all;
@@ -214,8 +219,8 @@
   padding: 4px 6px;
   font-size: 0.78em;
   line-height: 1.5;
-  background: rgba(129, 161, 193, 0.1);
-  color: #88c0d0;
+  background: #313244;
+  color: #F5C2E7;
   border-radius: 2px;
 }
 
@@ -223,10 +228,10 @@
   font-family: "Dongle", "Josefin Sans", "Noto Sans KR";
   margin: 20px 0;
   padding: 0 14px;
-  border-inline-start: 3px solid #81a1c1;
+  border-inline-start: 3px solid #F5C2E7;
   font-size: 1.65em;
   color: var(--content);
-  background-color: rgba(129, 161, 193, 0.1);
+  background-color: rgba(245, 194, 231, 0.1);
 }
 
 .post-content hr {
@@ -269,19 +274,20 @@
 .toc {
   margin: 0 2px 40px 2px;
   border: 1px solid var(--border);
-  background: var(--code-bg);
+  background: #313244;
   border-radius: var(--radius);
   padding: 0.4em;
 }
 
 .dark .toc {
-  background: var(--entry);
+  background: #313244;
 }
 
 .toc details summary {
   cursor: zoom-in;
   margin-inline-start: 10px;
   user-select: none;
+  background: #313244;
 }
 
 .toc details[open] summary {
@@ -420,4 +426,9 @@ h1 > a > svg {
 img.in-text {
   display: inline;
   margin: auto;
+}
+
+.copy-code {
+  color: #CDD6F4;
+  background: #45475A;
 }

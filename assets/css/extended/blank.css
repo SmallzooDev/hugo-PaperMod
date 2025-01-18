@@ -46,6 +46,17 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 code {
   font-family: "Ubuntu Mono", monospace;
   max-height: 40rem;
+  background-color: #1E1E2E;  /* Catppuccin Mocha base */
+}
+
+/* 코드 블록 내부 */
+.post-content .highlight pre {
+  background-color: #1E1E2E !important;  /* Catppuccin Mocha base */
+}
+
+/* 인라인 코드 */
+.post-content code {
+  background-color: #313244;  /* Catppuccin Mocha surface0 */
 }
 
 :root {
@@ -56,8 +67,8 @@ code {
 
 .toc {
   margin: 0 2px 40px 2px;
-  border: 1px solid var(--border);
-  background: var(--entry);
+  border: none;
+  background: #1E1E2E;
   border-radius: var(--radius);
   padding: 0.4em;
 }
@@ -65,7 +76,7 @@ code {
 .toc-container.wide {
   position: absolute;
   height: 100%;
-  border-right: 1px solid var(--border);
+  border: none;
   left: calc((var(--toc-width) + var(--gap)) * -1);
   top: calc(var(--gap) * 2);
   width: var(--toc-width);
@@ -75,7 +86,7 @@ code {
   position: sticky;
   top: var(--gap);
   border: unset;
-  background: unset;
+  background: transparent;
   border-radius: unset;
   width: 100%;
   margin: 0 2px 40px 2px;
@@ -85,14 +96,17 @@ code {
   cursor: zoom-in;
   margin-inline-start: 20px;
   padding: 12px 0;
+  background: transparent;
 }
 
 .toc details[open] summary {
   font-weight: 500;
+  background: transparent;
 }
 
 .toc-container.wide .toc .inner {
   margin: 0;
+  background: transparent;
 }
 
 .active {

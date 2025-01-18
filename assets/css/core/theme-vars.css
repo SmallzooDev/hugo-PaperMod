@@ -6,27 +6,27 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
-    --theme: rgb(46, 52, 64);
-    --entry: rgb(46, 52, 64);
-    --primary: rgb(216, 222, 233);
-    --secondary: rgb(163, 190, 140);
-    --tertiary: rgb(173, 216, 230); /* White-blue */
-    --content: rgb(208, 208, 208);
-    --code-block-bg: rgb(40, 44, 52);
-    --code-bg: rgb(47, 54, 64);
-    --border: rgb(51, 51, 51);
+    --theme: #1E1E2E;         /* Mocha Base */
+    --entry: #313244;         /* Mocha Surface0 */
+    --primary: #CDD6F4;       /* Mocha Text */
+    --secondary: #A6E3A1;     /* Mocha Green */
+    --tertiary: #89B4FA;      /* Mocha Blue */
+    --content: #CDD6F4;       /* Mocha Text */
+    --code-block-bg: #313244; /* Mocha Surface0 */
+    --code-bg: #45475A;       /* Mocha Surface1 */
+    --border: #45475A;        /* Mocha Surface1 */
 }
 
 .dark {
-    --theme: rgb(46, 52, 64);
-    --entry: rgb(46, 52, 64);
-    --primary: rgb(216, 222, 233);
-    --secondary: rgb(163, 190, 140);
-    --tertiary: rgb(187, 223, 233);
-    --content: rgb(208, 208, 208);
-    --code-block-bg: rgb(40, 44, 52);
-    --code-bg: rgb(47, 54, 64);
-    --border: rgb(51, 51, 51);
+    --theme: #1E1E2E;         /* Mocha Base */
+    --entry: #313244;         /* Mocha Surface0 */
+    --primary: #CDD6F4;       /* Mocha Text */
+    --secondary: #A6E3A1;     /* Mocha Green */
+    --tertiary: #89B4FA;      /* Mocha Blue */
+    --content: #CDD6F4;       /* Mocha Text */
+    --code-block-bg: #313244; /* Mocha Surface0 */
+    --code-bg: #45475A;       /* Mocha Surface1 */
+    --border: #45475A;        /* Mocha Surface1 */
 }
 
 .list {
