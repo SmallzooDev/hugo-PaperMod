@@ -38,6 +38,7 @@
   line-height: 1.8;
   max-width: 750px;
   margin: 0 auto;
+  padding: 0 1.2rem;
 }
 
 .post-content p {
@@ -468,4 +469,99 @@ img.in-text {
 .copy-code {
   color: #CDD6F4;
   background: #45475A;
+}
+
+@media screen and (max-width: 768px) {
+  .post-content {
+    font-size: 0.8em;
+  }
+
+  .post-content p {
+    margin-bottom: 1.6em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .post-content h1 {
+    font-size: 1.7em;
+    margin: 2.2em 0 0.8em;
+    word-break: keep-all;
+  }
+
+  .post-content h2 {
+    font-size: 1.4em;
+    margin: 2em 0 0.7em;
+    word-break: keep-all;
+  }
+
+  .post-content h3 {
+    font-size: 1.25em;
+    margin: 1.8em 0 0.6em;
+    word-break: keep-all;
+  }
+
+  .post-content h4 {
+    font-size: 1.15em;
+    margin: 1.6em 0 0.5em;
+    word-break: keep-all;
+  }
+
+  .post-content ul,
+  .post-content ol {
+    padding-left: 1.1em;
+    margin-bottom: 1.6em;
+  }
+
+  .post-content li {
+    margin: 0.6em 0;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .post-content a {
+    padding: 1px 3px;
+    margin: 0;
+    border-radius: 3px;
+    display: inline;
+    line-height: inherit;
+    border-bottom-width: 1px;
+    text-decoration: none;
+    word-break: break-all;
+  }
+
+  .post-content blockquote {
+    margin: 1.8em 0;
+    padding: 0.8em 1em;
+    font-size: 1.3em;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+
+  .post-content pre {
+    margin: 1.5em -1.2rem;
+  }
+
+  .post-content pre code {
+    padding: 1.2em;
+    font-size: 0.85em;
+    line-height: 1.7;
+    border-radius: 0;
+  }
+
+  .post-content code {
+    padding: 2px 5px;
+    font-size: 0.85em;
+    border-radius: 3px;
+  }
+
+  .post-content img {
+    margin: 1.8rem -1.2rem;
+    max-width: calc(100% + 2.4rem);
+    border-radius: 0;
+  }
+
+  .toc {
+    margin: 0 -0.5rem 2rem -0.5rem;
+    padding: 1rem;
+  }
 }
