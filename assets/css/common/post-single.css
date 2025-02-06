@@ -258,6 +258,27 @@
   border: 1px solid rgba(205, 214, 244, 0.1);
 }
 
+/* 스크롤바 스타일링 */
+.post-content pre code::-webkit-scrollbar {
+  height: 8px;
+  background-color: rgba(49, 50, 68, 0.95);
+}
+
+.post-content pre code::-webkit-scrollbar-thumb {
+  background: rgba(205, 214, 244, 0.2);
+  border-radius: 4px;
+}
+
+.post-content pre code::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Firefox 스크롤바 */
+.post-content pre code {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(205, 214, 244, 0.2) rgba(49, 50, 68, 0.95);
+}
+
 .post-content code {
   margin: 0 3px;
   padding: 3px 8px;
@@ -552,9 +573,8 @@ img.in-text {
   }
 
   .post-content pre code {
-    padding: 1.2em;
-    font-size: 0.85em;
-    line-height: 1.7;
+    margin: 1.5em -1rem;
+    padding: 1.2em 1rem;
     border-radius: 0;
   }
 
