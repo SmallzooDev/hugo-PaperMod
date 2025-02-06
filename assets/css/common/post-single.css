@@ -381,20 +381,20 @@
   margin: 2em 0;
   padding: 1.5em;
   border: none;
-  background: rgba(49, 50, 68, 0.05);
-  border-radius: 12px;
-  box-shadow: inset 0 0 0 1px rgba(180, 190, 254, 0.15);
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .dark .toc {
-  background: #313244;
+  background: none;
 }
 
 .toc details summary {
   cursor: zoom-in;
   margin-inline-start: 10px;
   user-select: none;
-  background: #313244;
+  background: none;
 }
 
 .toc details[open] summary {
