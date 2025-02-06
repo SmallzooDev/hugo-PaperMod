@@ -266,6 +266,18 @@
   font-size: 1.65em;
   color: var(--content);
   background-color: rgba(245, 194, 231, 0.1);
+  line-height: 1.2;
+}
+
+.post-content blockquote p {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+.post-content blockquote p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .post-content hr {
@@ -408,57 +420,21 @@
   margin-inline-end: 12px;
 }
 
+.anchor {
+  display: none !important;
+}
+
 h1:hover .anchor,
 h2:hover .anchor,
 h3:hover .anchor,
 h4:hover .anchor,
 h5:hover .anchor,
 h6:hover .anchor {
-  display: inline-flex;
-  color: var(--secondary);
-  margin-inline-start: 8px;
-  font-weight: 500;
-  user-select: none;
-}
-
-.paginav {
-  display: flex;
-  line-height: 30px;
-}
-
-.paginav a {
-  padding-inline-start: 14px;
-  padding-inline-end: 14px;
-  border-radius: var(--radius);
-}
-
-.paginav .title {
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: small;
-  color: var(--secondary);
-}
-
-.paginav .prev,
-.paginav .next {
-  width: 50%;
-}
-
-.paginav span:hover:not(.title) {
-  box-shadow: 0 1px 0;
-}
-
-.paginav .next {
-  margin-inline-start: auto;
-  text-align: right;
-}
-
-[dir="rtl"] .paginav .next {
-  text-align: left;
+  display: none !important;
 }
 
 h1 > a > svg {
-  display: inline;
+  display: none !important;
 }
 
 img.in-text {
@@ -471,9 +447,36 @@ img.in-text {
   background: #45475A;
 }
 
+.post-content ul {
+  list-style: none;
+  padding-left: 1.2em;
+}
+
+.post-content ul li {
+  position: relative;
+}
+
+.post-content ul li::before {
+  content: "";
+  position: absolute;
+  left: -1.2em;
+  top: 0.7em;
+  width: 5px;
+  height: 5px;
+  background-color: #89B4FA;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.post-content ol {
+  padding-left: 1.5em;
+}
+
 @media screen and (max-width: 768px) {
   .post-content {
     font-size: 0.8em;
+    padding: 0;
+    max-width: 100%;
   }
 
   .post-content p {
@@ -506,16 +509,15 @@ img.in-text {
     word-break: keep-all;
   }
 
-  .post-content ul,
-  .post-content ol {
-    padding-left: 1.1em;
-    margin-bottom: 1.6em;
+  .post-content ul {
+    padding-left: 1em;
   }
 
-  .post-content li {
-    margin: 0.6em 0;
-    word-break: keep-all;
-    overflow-wrap: break-word;
+  .post-content ul li::before {
+    left: -1em;
+    top: 0.6em;
+    width: 4px;
+    height: 4px;
   }
 
   .post-content a {
@@ -530,15 +532,19 @@ img.in-text {
   }
 
   .post-content blockquote {
-    margin: 1.8em 0;
-    padding: 0.8em 1em;
+    margin: 1em 0;
+    padding: 0.5em 1em;
     font-size: 1.3em;
-    line-height: 1.5;
-    word-break: keep-all;
+    line-height: 1.2;
+  }
+
+  .post-content blockquote p {
+    margin: 0;
   }
 
   .post-content pre {
-    margin: 1.5em -1.2rem;
+    margin: 1.5em 0;
+    border-radius: 0;
   }
 
   .post-content pre code {
@@ -555,8 +561,8 @@ img.in-text {
   }
 
   .post-content img {
-    margin: 1.8rem -1.2rem;
-    max-width: calc(100% + 2.4rem);
+    margin: 1.5em 0;
+    max-width: 100%;
     border-radius: 0;
   }
 
