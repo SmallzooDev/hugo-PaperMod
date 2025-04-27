@@ -1,4 +1,5 @@
 :root {
+    /* 레이아웃 변수 - 모드와 무관한 값 */
     --gap: 24px;
     --content-gap: 20px;
     --nav-width: 1024px;
@@ -6,6 +7,8 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
+    
+    /* 색상 변수 - 기본 값(다크 모드와 동일) */
     --theme: #1E1E2E;         /* Mocha Base */
     --entry: #313244;         /* Mocha Surface0 */
     --primary: #CDD6F4;       /* Mocha Text */
@@ -17,22 +20,11 @@
     --border: #45475A;        /* Mocha Surface1 */
 }
 
-.dark {
-    --theme: #1E1E2E;         /* Mocha Base */
-    --entry: #313244;         /* Mocha Surface0 */
-    --primary: #CDD6F4;       /* Mocha Text */
-    --secondary: #A6E3A1;     /* Mocha Green */
-    --tertiary: #89B4FA;      /* Mocha Blue */
-    --content: #CDD6F4;       /* Mocha Text */
-    --code-block-bg: #313244; /* Mocha Surface0 */
-    --code-bg: #45475A;       /* Mocha Surface1 */
-    --border: #45475A;        /* Mocha Surface1 */
-}
+/* 라이트 모드와 다크 모드가 동일하기 때문에 .dark 클래스는 제거하고, 
+   만약 라이트 모드를 별도로 추가하려면 여기에 .light 클래스를 정의하면 됩니다. */
 
 .list {
     background: var(--theme);
 }
 
-.dark.list {
-    background: var(--theme);
-}
+/* .dark.list는 불필요한 중복이므로 제거합니다. */
