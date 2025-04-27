@@ -1,25 +1,35 @@
+/**
+ * 반응형 미디어 쿼리
+ * 다양한 화면 크기에 대한 스타일 조정을 정의합니다.
+ * 미디어 쿼리를 크기별로 논리적으로 그룹화합니다.
+ */
+
+/* 작은 모바일 화면 (340px 이하) */
+@media screen and (max-width: 340px) {
+    /* 공유 버튼 레이아웃 조정 */
+    .share-buttons {
+        justify-content: unset;
+    }
+}
+
+/* 태블릿 및 모바일 화면 (768px 이하) */
 @media screen and (max-width: 768px) {
-    /* theme-vars */
+    /* 기본 변수 재정의 */
     :root {
         --gap: 14px;
     }
 
-    /* profile-mode */
+    /* 프로필 모드 */
     .profile img {
         transform: scale(0.85);
     }
-
-    /* entry-base */
-    .entry-base {
-        /* mobile common styles */
-    }
-
-    /* post-entry */
+    
+    /* 첫 번째 항목 - 높이 축소 */
     .first-entry {
         min-height: 260px;
     }
 
-    /* archive */
+    /* 아카이브 레이아웃 조정 */
     .archive-month {
         flex-direction: column;
     }
@@ -28,27 +38,23 @@
         margin-top: 20px;
     }
 
-    /* footer */
+    /* 푸터 패딩 조정 */
     .footer {
         padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
     }
 }
 
-/* footer */
+/* 중간 크기 화면 (900px 이하) */
 @media screen and (max-width: 900px) {
+    /* 상단 링크 위치 조정 */
     .list .top-link {
         transform: translateY(-5rem);
     }
 }
 
-@media screen and (max-width: 340px) {
-    .share-buttons {
-        justify-content: unset;
-    }
-}
-
+/* 모션 감소 설정 - 애니메이션 최적화 */
 @media (prefers-reduced-motion) {
-    /* terms; profile-mode; post-single; post-entry; post-entry; search; search */
+    /* 애니메이션 효과 제거 */
     .terms-tags a:active,
     .button:active,
     .post-entry:active,

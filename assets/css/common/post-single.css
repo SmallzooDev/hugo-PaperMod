@@ -1,3 +1,9 @@
+/**
+ * 포스트 단일 페이지 스타일
+ * 포스트 상세 페이지와 관련된 스타일을 정의합니다.
+ */
+
+/* 헤더 영역 */
 .page-header,
 .post-header {
   margin: 24px auto var(--content-gap) auto;
@@ -32,6 +38,7 @@
   font-size: 16px;
 }
 
+/* 포스트 콘텐츠 영역 */
 .post-content {
   font-size: 1em;
   color: var(--content);
@@ -46,6 +53,7 @@
   letter-spacing: -0.003em;
 }
 
+/* 포스트 제목 스타일 */
 .post-content h1,
 .post-content h2 {
   position: relative;
@@ -59,7 +67,7 @@
 .post-content h1 {
   font-size: 2.4em;
   margin: 2em 0 0.8em;
-  color: #CDD6F4;
+  color: var(--primary);
   letter-spacing: -0.02em;
   font-weight: 700;
 }
@@ -67,7 +75,7 @@
 .post-content h2 {
   font-size: 1.8em;
   margin: 1.8em 0 0.6em;
-  color: #B4BEFE;
+  color: var(--tertiary);
   letter-spacing: -0.015em;
   font-weight: 600;
 }
@@ -75,7 +83,7 @@
 .post-content h3 {
   font-size: 1.4em;
   margin: 1.5em 0 0.5em;
-  color: #F9E2AF;
+  color: var(--secondary);
   letter-spacing: -0.01em;
   font-weight: 600;
 }
@@ -83,7 +91,7 @@
 .post-content h4 {
   font-size: 1.2em;
   margin: 1.3em 0 0.4em;
-  color: #F9E2AF;
+  color: var(--secondary);
   letter-spacing: -0.005em;
   font-weight: 500;
 }
@@ -102,8 +110,9 @@
   font-weight: 500;
 }
 
+/* 포스트 링크 스타일 */
 .post-content a {
-  color: #A6E3A1;
+  color: var(--secondary);
   text-decoration: none;
   padding: 2px 6px;
   margin: 0 1px;
@@ -118,8 +127,8 @@
 
 .post-content a:hover {
   background-color: rgba(166, 227, 161, 0.15);
-  color: #A6E3A1;
-  border-bottom: 2px solid #A6E3A1;
+  color: var(--secondary);
+  border-bottom: 2px solid var(--secondary);
   transform: translateY(-1px);
   box-shadow: 0 2px 8px rgba(166, 227, 161, 0.15);
 }
@@ -138,6 +147,7 @@
   text-decoration: line-through;
 }
 
+/* 포스트 콘텐츠 요소 여백 */
 .post-content dl,
 .post-content ol,
 .post-content p,
@@ -146,6 +156,7 @@
   margin-bottom: var(--content-gap);
 }
 
+/* 포스트 목록 스타일 */
 .post-content ol,
 .post-content ul {
   padding-left: 1.5em;
@@ -161,6 +172,7 @@
   margin-bottom: 0;
 }
 
+/* 포스트 정의 목록 스타일 */
 .post-content dl {
   display: flex;
   flex-wrap: wrap;
@@ -183,6 +195,7 @@
   margin-top: 10px;
 }
 
+/* 포스트 테이블 스타일 */
 .post-content table {
   width: 100%;
   border-collapse: separate;
@@ -220,22 +233,24 @@
   border-bottom: none;
 }
 
+/* 코드 스타일링 */
 .post-content code:not(pre code) {
   font-size: 0.9em;
   padding: 2px 6px;
   background: rgba(245, 194, 231, 0.1);
-  color: #F5C2E7;
+  color: var(--primary);
   border-radius: 4px;
   border: 1px solid rgba(245, 194, 231, 0.2);
 }
 
+/* 코드 하이라이트 테이블 */
 .post-content .highlight table {
   border-radius: var(--radius);
 }
 
 .post-content .highlight:not(table) {
   margin: 10px auto;
-  background: #1e1e2e !important;
+  background: var(--theme) !important;
   border-radius: var(--radius);
   direction: ltr;
 }
@@ -249,7 +264,7 @@
 }
 
 .post-content .highlight pre {
-  background-color: #313244 !important;
+  background-color: var(--code-block-bg) !important;
   margin: 0;
 }
 
@@ -270,11 +285,12 @@
   margin-bottom: 0;
 }
 
+/* 코드 블록 스타일 */
 .post-content pre code {
   display: block;
   margin: 1.5em 0;
   padding: 1.2em;
-  background: rgba(49, 50, 68, 0.95) !important;
+  background: var(--code-block-bg) !important;
   border-radius: 8px;
   overflow-x: auto;
   line-height: 1.6;
@@ -285,7 +301,7 @@
 /* 스크롤바 스타일링 */
 .post-content pre code::-webkit-scrollbar {
   height: 8px;
-  background-color: rgba(49, 50, 68, 0.95);
+  background-color: var(--code-block-bg);
 }
 
 .post-content pre code::-webkit-scrollbar-thumb {
@@ -300,28 +316,30 @@
 /* Firefox 스크롤바 */
 .post-content pre code {
   scrollbar-width: thin;
-  scrollbar-color: rgba(205, 214, 244, 0.2) rgba(49, 50, 68, 0.95);
+  scrollbar-color: rgba(205, 214, 244, 0.2) var(--code-block-bg);
 }
 
+/* 인라인 코드 스타일 */
 .post-content code {
   margin: 0 3px;
   padding: 3px 8px;
   font-size: 0.9em;
   line-height: 1.5;
-  background: rgba(49, 50, 68, 0.8);
-  color: #F5C2E7;
+  background: var(--code-bg);
+  color: var(--primary);
   border-radius: 4px;
   font-family: 'JetBrains Mono', monospace;
 }
 
+/* 인용구 스타일 */
 .post-content blockquote {
   font-family: "Dongle", "Josefin Sans", "Noto Sans KR";
   margin: 20px 0;
   padding: 0 14px;
-  border-inline-start: 3px solid #F5C2E7;
+  border-inline-start: 3px solid var(--primary);
   font-size: 1.65em;
   color: var(--content);
-  background-color: rgba(245, 194, 231, 0.1);
+  background-color: rgba(205, 214, 244, 0.1);
 }
 
 .post-content blockquote p {

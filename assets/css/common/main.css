@@ -1,3 +1,9 @@
+/**
+ * 메인 레이아웃 스타일
+ * 사이트의 주요 레이아웃 및 공통 컴포넌트 스타일을 정의합니다.
+ */
+
+/* 메인 콘텐츠 영역 */
 .main {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
@@ -7,14 +13,17 @@
     background-color: var(--theme);
 }
 
+/* 페이지 헤더 제목 */
 .page-header h1 {
     font-size: 40px;
 }
 
+/* 페이지네이션 컨테이너 */
 .pagination {
     display: flex;
 }
 
+/* 페이지네이션 링크 */
 .pagination a {
     color: var(--theme);
     font-size: 13px;
@@ -24,30 +33,35 @@
     padding: 0 16px;
 }
 
+/* 다음 페이지 링크 (우측 정렬) */
 .pagination .next {
     margin-inline-start: auto;
 }
 
-
+/* 소셜 아이콘 링크 */
 .social-icons a {
     display: inline-flex;
     padding: 10px;
 }
 
+/* 소셜 아이콘 SVG */
 .social-icons a svg {
     height: 26px;
     width: 26px;
 }
 
+/* 코드 방향 설정 - RTL 언어에서도 LTR로 표시 */
 code {
     direction: ltr;
 }
 
+/* 코드 블록 포지셔닝 */
 div.highlight,
 pre {
     position: relative;
 }
 
+/* 코드 복사 버튼 스타일 */
 .copy-code {
     display: none;
     position: absolute;
@@ -61,6 +75,7 @@ pre {
     user-select: none;
 }
 
+/* 코드 블록에 마우스 오버 시 복사 버튼 표시 */
 div.highlight:hover .copy-code,
 pre:hover .copy-code {
     display: block;
