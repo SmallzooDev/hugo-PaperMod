@@ -4,26 +4,26 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
 
-.ubuntu-mono-regular {
-  font-family: "Ubuntu Mono", monospace;
+.jetbrains-mono-regular {
+  font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   font-style: normal;
 }
 
-.ubuntu-mono-bold {
-  font-family: "Ubuntu Mono", monospace;
+.jetbrains-mono-bold {
+  font-family: "JetBrains Mono", monospace;
   font-weight: 700;
   font-style: normal;
 }
 
-.ubuntu-mono-regular-italic {
-  font-family: "Ubuntu Mono", monospace;
+.jetbrains-mono-regular-italic {
+  font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   font-style: italic;
 }
 
-.ubuntu-mono-bold-italic {
-  font-family: "Ubuntu Mono", monospace;
+.jetbrains-mono-bold-italic {
+  font-family: "JetBrains Mono", monospace;
   font-weight: 700;
   font-style: italic;
 }
@@ -36,7 +36,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 }
 
 .josefin-sans-for-eng {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "JetBrains Mono", sans-serif;
   font-optical-sizing: auto;
   font-weight: regular;
   font-style: normal;
@@ -44,9 +44,11 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 .post-content pre,
 code {
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   max-height: 40rem;
   background-color: #1E1E2E;  /* Catppuccin Mocha base */
+  font-size: 0.75rem;
+  letter-spacing: -0.01em;
 }
 
 /* 코드 블록 내부 */
@@ -65,12 +67,14 @@ code {
   --toc-width: 300px;
 }
 
+/* 목차 스타일 */
 .toc {
   margin: 0 2px 40px 2px;
   border: none;
   background: #1E1E2E;
   border-radius: var(--radius);
   padding: 0.4em;
+  font-size: 0.7rem;
 }
 
 .toc-container.wide {
@@ -110,7 +114,7 @@ code {
 }
 
 .active {
-  font-size: 110%;
+  font-size: 105%;
   font-weight: 600;
   color: var(--secondary);
 }
@@ -122,7 +126,7 @@ code {
 .toc .inner {
   margin: 0 0 0 20px;
   padding: 0px 15px 15px 20px;
-  font-size: 16px;
+  font-size: 0.7rem;
 }
 
 .toc li ul {
@@ -132,7 +136,7 @@ code {
 
 .toc li {
   list-style: none;
-  font-size: 0.95rem;
+  font-size: 0.7rem;
   padding-bottom: 5px;
 }
 
@@ -140,10 +144,50 @@ code {
   color: var(--secondary);
 }
 
+/* 기본 글꼴 설정 */
 body {
-  font-family: "Josefin Sans", "Noto Sans KR", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-family: "JetBrains Mono", "Noto Sans KR", sans-serif;
+  font-size: 0.7rem;
+  line-height: 1.35;
   margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* 게시물 콘텐츠 글꼴 설정 */
+.post-content {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+/* 헤더 크기 조정 */
+.post-title {
+  font-size: 1.5rem !important;
+  letter-spacing: -0.01em;
+}
+
+.post-content h1 {
+  font-size: 1.4rem !important;
+  letter-spacing: -0.01em;
+}
+
+.post-content h2 {
+  font-size: 1.3rem !important;
+  letter-spacing: -0.01em;
+}
+
+.post-content h3 {
+  font-size: 1.1rem !important;
+  letter-spacing: -0.01em;
+}
+
+.post-content h4 {
+  font-size: 1rem !important;
+  letter-spacing: -0.01em;
+}
+
+.post-content p {
+  margin-bottom: 1em;
+  font-size: 0.75rem;
 }
 

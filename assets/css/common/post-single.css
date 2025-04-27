@@ -296,6 +296,11 @@
   line-height: 1.6;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(205, 214, 244, 0.1);
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  box-sizing: border-box;
+  clear: both;
 }
 
 /* 스크롤바 스타일링 */
@@ -333,19 +338,28 @@
 
 /* 인용구 스타일 */
 .post-content blockquote {
-  font-family: "Dongle", "Josefin Sans", "Noto Sans KR";
-  margin: 20px 0;
-  padding: 0 14px;
-  border-inline-start: 3px solid var(--primary);
-  font-size: 1.65em;
+  font-family: "JetBrains Mono", "Noto Sans KR";
+  margin: 1rem 0;
+  padding: 0.5rem 0.7rem;
+  border-inline-start: 3px solid #f5c2e7;
+  font-size: 0.7rem;
   color: var(--content);
-  background-color: rgba(205, 214, 244, 0.1);
+  background-color: rgba(245, 194, 231, 0.1);
+  line-height: 1.3;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 2;
+  clear: both;
+  overflow: visible;
 }
 
 .post-content blockquote p {
   margin: 0;
   padding: 0;
   line-height: inherit;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 .post-content blockquote p:last-child {
@@ -644,14 +658,17 @@ img.in-text {
   }
 
   .post-content blockquote {
-    margin: 1em 0;
-    padding: 0.8em 1.2em;
-    font-size: 1.3em;
-    border-radius: 0 6px 6px 0;
+    margin: 0.8rem 0;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.65rem;
+    border-radius: 0 4px 4px 0;
+    border-inline-start: 2px solid #f5c2e7;
+    background-color: rgba(245, 194, 231, 0.08);
   }
 
   .post-content blockquote p {
     margin: 0;
+    font-size: 0.65rem;
   }
 
   .post-content pre {
