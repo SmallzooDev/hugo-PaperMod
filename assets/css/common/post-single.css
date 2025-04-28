@@ -235,12 +235,16 @@
 
 /* 코드 스타일링 */
 .post-content code:not(pre code) {
-  font-size: 0.9em;
-  padding: 2px 6px;
-  background: rgba(245, 194, 231, 0.1);
-  color: var(--primary);
-  border-radius: 4px;
-  border: 1px solid rgba(245, 194, 231, 0.2);
+  padding: 0px 1px;
+  font-size: 0.35em;
+  border-radius: 2px;
+  background: rgba(203, 166, 247, 0.02);
+  color: #cba6f7;
+  border: 0.25px solid rgba(203, 166, 247, 0.04);
+  font-weight: normal;
+  letter-spacing: 0;
+  margin: 0 1px;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 /* 코드 하이라이트 테이블 */
@@ -326,14 +330,13 @@
 
 /* 인라인 코드 스타일 */
 .post-content code {
-  margin: 0 3px;
-  padding: 3px 8px;
-  font-size: 0.9em;
-  line-height: 1.5;
-  background: var(--code-bg);
-  color: var(--primary);
-  border-radius: 4px;
-  font-family: 'JetBrains Mono', monospace;
+  padding: 1px 3px;
+  font-size: 0.65em;
+  border-radius: 3px;
+  background: rgba(203, 166, 247, 0.08);
+  color: #cba6f7;
+  border: 1px solid rgba(203, 166, 247, 0.15);
+  font-weight: normal;
 }
 
 /* 인용구 스타일 */
@@ -609,8 +612,10 @@ img.in-text {
 @media screen and (max-width: 768px) {
   .post-content {
     font-size: 0.8em;
-    padding: 0;
+    padding: 0 0.5rem;
     max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .post-content p {
@@ -673,19 +678,31 @@ img.in-text {
 
   .post-content pre {
     margin: 1.5em 0;
-    border-radius: 0;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .post-content pre code {
-    margin: 1.5em -1rem;
-    padding: 1.2em 1rem;
-    border-radius: 0;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre;
+    font-size: 0.6rem;
+    box-sizing: border-box;
   }
 
-  .post-content code {
-    padding: 2px 5px;
-    font-size: 0.85em;
-    border-radius: 3px;
+  .post-content code:not(pre code) {
+    padding: 0px 1px;
+    font-size: 0.35em;
+    border-radius: 2px;
+    background: rgba(203, 166, 247, 0.02);
+    color: #cba6f7;
+    border: 0.25px solid rgba(203, 166, 247, 0.04);
   }
 
   .post-content img {
