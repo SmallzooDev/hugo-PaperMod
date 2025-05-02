@@ -45,7 +45,7 @@
     <br />
     <ul id="recent-changes-list">
       {{ $pages := where .Site.Pages "Section" "_wiki" }} {{ $latestPages :=
-      first 20 (sort $pages "Date" "desc") }} {{ range $latestPages }}
+      first 40 (sort $pages "Date" "desc") }} {{ range $latestPages }}
       <li>
         <div>
           <a class="post-link" href="{{ .Permalink }}">
